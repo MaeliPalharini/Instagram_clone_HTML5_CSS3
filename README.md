@@ -6,7 +6,6 @@ Bem-vindo ao **Clone do Instagram**! Este é um projeto front-end que replica a 
 
 Este projeto tem como objetivo fins didáticos. Visa recriar a aparência e a funcionalidade básica do Instagram usando HTML e CSS, mas com uma temática inspirada na série **Casa do Dragão**. 
 ## 🚀 Tecnologias Utilizadas
-
 - HTML5
 - CSS3
 
