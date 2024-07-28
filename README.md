@@ -18,9 +18,16 @@ Tema Casa do Dragão: Imagens, cores e elementos visuais inspirados na série Th
 
 ## 🎨 Capturas de Tela
 <div align="center">
-  <img src="assets/imagens/tela-mobile.png" alt="Tela Mobile" width="300px" <p>Tela Mobile</p>
-  <img src="assets/imagens/tela-pc-insta.png" alt="Tela PC" width="600px" <p>Tela Monitor-PC</p>
+  <p style="margin-top: 20px;">Tela Mobile</p>
+  <img src="assets/imagens/tela-mobile.png" alt="Tela Mobile" width="300px">
+  
+  <br><br>
+  
+  <p style="margin-top: 20px;">Tela Monitor-PC</p>
+  <img src="assets/imagens/tela-pc-insta.png" alt="Tela PC" width="600px">
 </div>
+
+
 
 ## 🛠️ Instalação
 Para clonar e executar este projeto em sua máquina local, siga estas etapas:
