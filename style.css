@@ -1,59 +1,80 @@
 body {
-    font-family: "encode sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
     margin: 0;
     padding: 0;
 }
 
+.container {
+    max-width: 935px;
+    margin: 0 auto;
+
+}
+
 .container_pai_top {
-    width: 2337px;
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 10px 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    cursor: pointer;
 }
 
 .top {
-    display: flex;
+    display:flex;
+    max-width: 935px;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
-    width:300px;
+    position: fixed;
 }
 
-.top_esquerdo, .top_centro, .top_direita {
-    display: flex;
-    align-items: center;
-    margin-right: 330px;
-}
-
-.top_esquerdo {
+.top_esquerdo, .top_direita {
     flex: 1;
-    margin-left: 330px;
+    display:flex;
+    align-items: center;
 }
 
 .top_centro {
     flex: 2;
     display: flex;
-    margin: 10px 0 10px 0;
-}
-
-.top_direita {
-    flex: 1;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-bar {
-    width: 300px;
+    width: 215px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    font-size: 16px;
+    font-size: 12px;
+    text-align: center;
+    margin:0 10px 0 10px;
 }
 
-.icon-container {
+.icon-container, .icon-container2 {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.icon-container2 {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon-container2 ion-icon:nth-child(4) {
+    margin: auto 20px 10px auto;
 }
 
 ion-icon {
@@ -61,19 +82,8 @@ ion-icon {
     height: 30px;
     font-size: 30px;
     margin-left: 20px;
+    margin-right: 20px;
     cursor: pointer;
-}
-
-.icon-container2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 10px;
-    font-size: 24px;
-}
-
-.icon-container2 ion-icon:nth-child(4) {
-    margin: auto 20px 10px auto;
 }
 
 .logo {
@@ -83,7 +93,7 @@ ion-icon {
 
 .logo-text {
     margin-left: 10px;
-    font-size: 24px;
+    font-size: 14px;
 }
 
 .vertical-line {
@@ -95,33 +105,36 @@ ion-icon {
 .container_corpo {
     display: flex;
     justify-content: center;
-    margin: 0;
+    max-width: 935px;
+    margin: 88px auto 0;
+    padding: 0 10px;
+    z-index: 1;
 }
 
-.container_corpo_esquerda{
-    margin: 15px 830px 0px 330px;
+.container_corpo_esquerda {
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 614px;
     padding: 10px;
     align-items: center;
 }
 
 .story-container {
-    width: 900px;
+    width: 614px;
+    height: 118px;
 }
 
-.stories{
+.stories {
     display: flex;
     gap: 16px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 24px;
+    margin-bottom: 60px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #dbdbdb;
     overflow: hidden;
-    margin-bottom: 20px;
 }
 
 .story {
@@ -142,17 +155,19 @@ ion-icon {
 
 .story-border img {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 56px;
+    height: 56px;
     padding: 3px;
     border: 2px solid #fff;
+    cursor: pointer;
 }
 
 .story p {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 400;
     color: #332b2b;
-    font-family: "encode sans", sans-serif;
+    cursor: pointer;
 }
 
 .nav-arrow {
@@ -168,17 +183,19 @@ ion-icon {
 
 .nav-arrow svg {
     fill: #eee4e4;
+    cursor: pointer;
 }
 
 .posts {
-    width:895px;
+    max-width: 614px;
     overflow: hidden;
+    margin-top: 60px;
 }
 
 .post {
     background-color: #fff;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin: 24px 0 60px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #dbdbdb;
     overflow: hidden;
@@ -187,9 +204,10 @@ ion-icon {
 .post-header {
     display: flex;
     align-items: center;
-    width: 880px;
+    max-width: 614px;
     height: 80px;
     justify-content: space-between;
+    font-weight: 500;
 }
 
 .post-avatar {
@@ -197,8 +215,8 @@ ion-icon {
     margin-left: 10px;
     margin-top: 10px;
     overflow: hidden;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
 }
 
 .post-avatar img {
@@ -207,20 +225,26 @@ ion-icon {
     object-fit: cover;
     align-items: center;
     margin-right: 200px;
+    cursor: pointer;
 }
 
 .post-user {
     font-weight: bold;
+    font-size: 14px;
     flex-grow: 1;
-    font-family: "encode sans", sans-serif;
     margin-left: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-user:visited {
+    color: inherit;
 }
 
 .post-image {
-    width:900px;
-    max-height: 900px;
+    max-width: 614px;
     margin-top: 10px;
-    margin-right: 150px;
+    cursor: pointer;
 }
 
 .post-actions {
@@ -252,7 +276,11 @@ ion-icon {
     align-items: center;
     margin-left: 20px;
     margin-top: 10px;
-    font-family: "encode sans", sans-serif;
+    cursor: pointer;
+
+    .p {
+        font-size: 14px;
+    }
 }
 
 .img-curtidas {
@@ -260,22 +288,23 @@ ion-icon {
     height: 30px;
     border-radius: 50%;
     margin-right: 10px;
-    font-family: "encode sans", sans-serif;;
+    cursor: pointer;
 }
 
 strong {
     font-weight: bold;
+    cursor: pointer;
 }
 
 .container-direita {
     display: flex;
     flex-direction: column;
-    width: 450px;
-    position: fixed;
-    top: 115px;
-    right: 380px;
+    width: 293px;
+    margin: 35px 0 0;
     background-color: #f8f8f8;
     padding: 10px;
+    font-size: 12px;
+
 }
 
 .perfil, .sugestao {
@@ -285,20 +314,22 @@ strong {
     border: 1px solid #f8f8f8;
     border-radius: 3px;
     padding: 10px;
-    margin: 10px 0 0 10px;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
 .avatar, .avatar-sugestao {
     border-radius: 50%;
     margin-right: 10px;
-    width: 70px;
-    height: 70px;
+    width: 32px;
+    height: 32px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .avatar {
-    width: 90px;
-    height: 90px;
+    width: 56px;
+    height: 56px;
 }
 
 .info {
@@ -339,7 +370,6 @@ strong {
     align-items: center;
     margin-left: 20px;
     margin-top: 10px;
-    font-family: "encode sans", sans-serif;
 }
 
 .comentario ion-icon:nth-child(3) {
@@ -354,13 +384,14 @@ strong {
     color: #fff;
     border: none;
     border-radius: 3px;
-    width: 330px;
+    width: 180px;
     text-align: center;
     height: 35px;
 }
 
 .container-input-comentarios {
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .botao-publicar {
@@ -381,7 +412,6 @@ strong {
 }
 
 .rodape  {
-    font-size: 14px;
     color: #bdb9b9;
     margin: 10px 0 20px 20px;
 
@@ -401,8 +431,7 @@ strong {
 }
 
 .legenda_post {
-    margin-left: 20px;
-    margin-bottom: 15px;
+    margin: 10px 0px 15px 20px;
 }
 
 .video_container iframe {
@@ -417,4 +446,172 @@ strong {
     font-size: 14px;
     text-align: center;
     color: #555;
+}
+
+@media (max-width: 600px) {
+    .container_pai_top {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .top {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top_esquerdo {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+
+        .vertical-line {
+            display: none;
+        }
+    }
+
+    .top_centro {
+        display: none;
+    }
+
+    .top_direita {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+    }
+
+    .top_centro img {
+        max-height: 40px;
+
+    }
+
+    .top_esquerdo ion-icon {
+        display: none;
+    }
+
+    .top_esquerdo ion-icon[name="logo-instagram"] {
+        display: block;
+    }
+
+    .top_direita ion-icon {
+        display: none;
+    }
+
+    .top_direita ion-icon[name="paper-plane-outline"] {
+        display: block;
+    }
+
+    .container_corpo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_corpo_esquerda {
+        margin: 15px 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .story-container {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap; /
+        scrollbar-width: none;
+    }
+
+    .story-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .stories {
+        display: flex;
+        gap: 16px;
+        padding: 0;
+        background-color: transparent;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: none;
+        border: none;
+    }
+
+    .story-container, .posts {
+        width: 100%;
+    }
+
+    .nav-arrow {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: rgba(246, 244, 244, 0.5);
+        padding: 5px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-arrow svg {
+        fill: #eee4e4;
+    }
+
+    .post-header, .post-image, .post-actions, .comentario, .comentario-input {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+   .posts {
+       margin-top: 20px
+   }
+
+    .img-curtidas {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+
+    .curtidas {
+        margin-left: auto;
+    }
+
+    .legenda_post {
+        margin-left: 0;
+    }
+
+    .post-avatar img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .comentario-input {
+        width: 50%;
+    }
+
+    .botao-publicar {
+        padding: 5px;
+    }
+
+    ion-icon {
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .container-direita {
+        display: none;
+
+    }
+
+    .mobile {
+        display: initial;
+    }
+
 }
